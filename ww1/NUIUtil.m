@@ -21,6 +21,7 @@ static CGFloat _fixedHeightScale;
 + (CGSize) sizeWith:(NSString *) text
                fontSize:(NSInteger) fontSize
 {
+    UIView *v=[[UIView alloc]init];
     return [NUIUtil sizeWith:text width:MAXFLOAT fontSize:fontSize];
 }
 // 根据字体计算指定宽度的自动尺寸
